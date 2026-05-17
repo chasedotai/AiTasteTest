@@ -2,11 +2,12 @@ const SUPABASE_URL      = "https://siybrsxreftmbbhxujmp.supabase.co";
 const SUPABASE_ANON_KEY = "sb_publishable_0Ebp443kgM-sjp0Q5WgLBg_HBVlcCEg";
 
 const state = {
-  screen: "intro",
-  deck:   [],
-  cursor: 0,
-  votes:  [],
-  phase:  "voting",
+  screen:    "intro",
+  deck:      [],
+  cursor:    0,
+  votes:     [],
+  phase:     "voting",
+  sessionId: null,
 };
 
 function shuffleArray(arr) {
@@ -19,11 +20,12 @@ function shuffleArray(arr) {
 }
 
 function initGame() {
-  state.deck   = shuffleArray(SAMPLES).slice(0, 100);
-  state.cursor = 0;
-  state.votes  = [];
-  state.phase  = "voting";
-  state.screen = "game";
+  state.deck      = shuffleArray(SAMPLES).slice(0, 100);
+  state.cursor    = 0;
+  state.votes     = [];
+  state.phase     = "voting";
+  state.screen    = "game";
+  state.sessionId = crypto.randomUUID();
   render();
 }
 
@@ -104,21 +106,25 @@ function renderGame() {
   const sample    = state.deck[state.cursor];
   const voted     = state.votes.length;
   const total     = state.deck.length;
-  const progress  = Math.round(((state.cursor) / total) * 100);
+  const progress  = Math.min(Math.round((voted / 10) * 100), 100);
   const progressLabel = voted < 10
     ? `${voted} / 10 minimum`
     : `${voted} voted`;
 
   const feedbackHTML = state.phase === "feedback" ? buildFeedback() : "";
-  const actionsHTML  = state.phase === "voting"
+  const mainActionsHTML = state.phase === "voting"
     ? `<div class="vote-actions">
          <button id="btn-human" class="btn btn-human">Human Written</button>
          <button id="btn-ai"    class="btn btn-ai">AI Generated</button>
        </div>`
     : `<div class="next-actions">
-         ${voted >= 10 ? `<button id="btn-score" class="btn btn-score">See My Score</button>` : ""}
          <button id="btn-next" class="btn btn-next">Next →</button>
        </div>`;
+
+  const scoreLocked = voted < 10;
+  const scoreHTML = `<div class="score-action">
+    <button id="btn-score" class="btn btn-score${scoreLocked ? " btn-score--locked" : ""}"${scoreLocked ? " disabled" : ""}>See My Score</button>
+  </div>`;
 
   const cardFeedbackClass = state.phase === "feedback"
     ? (state.votes[state.votes.length - 1].correct ? " card-correct" : " card-wrong")
@@ -138,7 +144,8 @@ function renderGame() {
         ${buildCard(sample)}
       </div>
       ${feedbackHTML}
-      ${actionsHTML}
+      ${mainActionsHTML}
+      ${scoreHTML}
     </div>
   `;
 
@@ -147,9 +154,9 @@ function renderGame() {
     document.getElementById("btn-ai").addEventListener("click",    () => handleVote(true));
   } else {
     document.getElementById("btn-next").addEventListener("click", handleNext);
-    const scoreBtn = document.getElementById("btn-score");
-    if (scoreBtn) scoreBtn.addEventListener("click", handleSeeScore);
   }
+  const scoreBtn = document.getElementById("btn-score");
+  if (scoreBtn && !scoreBtn.disabled) scoreBtn.addEventListener("click", handleSeeScore);
 }
 
 function buildFeedback() {
@@ -240,6 +247,7 @@ const db = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 async function submitScore(s) {
   if (SUPABASE_URL.includes("YOUR_")) return;
   const { error } = await db.from("game_results").insert({
+    session_id:       state.sessionId,
     total_votes:      s.total,
     correct:          s.correct,
     accuracy:         Math.round(s.accuracy * 100) / 100,
@@ -254,7 +262,17 @@ async function submitScore(s) {
     blog_total:       s.byType.blog.total,
     blog_correct:     s.byType.blog.correct,
   });
-  if (error) {}
+  if (error) return;
+
+  const voteRows = state.votes.map(v => ({
+    session_id:  state.sessionId,
+    sample_id:   v.id,
+    sample_type: v.type,
+    is_ai:       v.isAI,
+    guessed_ai:  v.guessedAI,
+    correct:     v.correct,
+  }));
+  await db.from("vote_events").insert(voteRows);
 }
 
 function typeLabel(t) {

@@ -261,6 +261,596 @@ const SAMPLES = [
     text: "In which the hacker tourist ventures forth across the wide and wondrous meatspace of three continents, acquainting himself with the customs and dialects of the exotic Manhole Villagers of Thailand, the U-Turn Tunnelers of the Nile Delta, the Cable Nomads of Lantao Island, the Slack Control Wizards of Chelmsford, the Subterranean Ex-Telegraphers of Cornwall, and other previously unknown and unchronicled folk; also, biographical sketches of the two long-dead Supreme Ninja Hacker Mage Lords of global telecommunications, and other material pertaining to the business and technology of Undersea Fiber-Optic Cables, as well as an account of the laying of the longest wire on Earth, which should not be without interest to the readers of WIRED."
   },
 
+  {
+    id: 54, type: "blog", isAI: false,
+    author: "David Foster Wallace, Infinite Jest (1996)", avatar: "📚",
+    text: "The United States: a community of sacred individuals which reveres the sacredness of the individual choice. The individual's right to pursue his own vision of the best ratio of pleasure to pain: utterly sacrosanct."
+  },
+  {
+    id: 55, type: "blog", isAI: false,
+    author: "David Foster Wallace, Infinite Jest (1996)", avatar: "📚",
+    text: "What if sometimes there is no choice about what to love? What if the temple comes to Mohammed? What if you just love? Without deciding? You just do: you see her and in that instant are lost to sober account-keeping and cannot choose but to love?"
+  },
+  {
+    id: 56, type: "blog", isAI: false,
+    author: "James Joyce, Finnegans Wake (1939)", avatar: "📚",
+    text: "It's something fails us. First we feel. Then we fall. And let her rain now if she likes. Gently or strongly as she likes. Anyway let her rain for my time is come. I done me best when I was let. Thinking always if I go all goes. A hundred cares, a tithe of troubles and is there one who understands me? One in a thousand of years of the nights?"
+  },
+
+  // ── TWEETS: AI — STYLE-BASED ────────────────────────────────────────────────
+
+  // patio11 style (IDs 57–66)
+  {
+    id: 57, type: "tweet", isAI: true,
+    author: "@patio11 (AI-generated)", avatar: "💼",
+    text: "If you are a software company which charges $29/month, you are not competing with $0 software. You are competing with the 3 hours of evaluation time your customer spent finding $0 software. Price accordingly."
+  },
+  {
+    id: 58, type: "tweet", isAI: true,
+    author: "@patio11 (AI-generated)", avatar: "💼",
+    text: "The number of software businesses that failed by charging too little is much larger than the number that failed by charging too much. Raise your prices. Seriously. Right now."
+  },
+  {
+    id: 59, type: "tweet", isAI: true,
+    author: "@patio11 (AI-generated)", avatar: "💼",
+    text: "Japan observation: meiwaku — the concept of causing inconvenience to others — shapes every product decision in ways that make most American software feel almost sociopathic by comparison."
+  },
+  {
+    id: 60, type: "tweet", isAI: true,
+    author: "@patio11 (AI-generated)", avatar: "💼",
+    text: "Your pricing page has a default plan. That default gets chosen by a plurality of customers regardless of whether it is actually correct for them. Default selection is one of the highest-leverage product decisions you will ever make."
+  },
+  {
+    id: 61, type: "tweet", isAI: true,
+    author: "@patio11 (AI-generated)", avatar: "💼",
+    text: "The most underrated skill in B2B sales: writing an email compelling enough to be forwarded to the actual decision-maker by the person you originally sent it to."
+  },
+  {
+    id: 62, type: "tweet", isAI: true,
+    author: "@patio11 (AI-generated)", avatar: "💼",
+    text: "Banks are not technology companies that happen to be regulated. They are compliance organizations that happen to run technology. This distinction explains almost everything that seems inexplicable about banking software."
+  },
+  {
+    id: 63, type: "tweet", isAI: true,
+    author: "@patio11 (AI-generated)", avatar: "💼",
+    text: "Before building a feature, ask whether a well-written 500-word email would accomplish the same customer goal. You will be surprised how often the answer is yes, and how rarely anyone asks this question."
+  },
+  {
+    id: 64, type: "tweet", isAI: true,
+    author: "@patio11 (AI-generated)", avatar: "💼",
+    text: "Payments is not a solved problem. It is a problem that has been partially solved for a narrow set of use cases and left almost entirely untouched for the majority of global commerce."
+  },
+  {
+    id: 65, type: "tweet", isAI: true,
+    author: "@patio11 (AI-generated)", avatar: "💼",
+    text: "The best customer support interaction prevents the next customer support interaction. Most companies optimize for closing tickets. Optimize instead for making tickets unnecessary."
+  },
+  {
+    id: 66, type: "tweet", isAI: true,
+    author: "@patio11 (AI-generated)", avatar: "💼",
+    text: "Small software businesses systematically undercharge enterprise customers because they compare to their own consumer pricing rather than to what the customer would otherwise pay, which is a full-time salary."
+  },
+
+  // Marc Andreessen style (IDs 67–76)
+  {
+    id: 67, type: "tweet", isAI: true,
+    author: "@pmarca (AI-generated)", avatar: "🏗️",
+    text: "The tech pessimists have been wrong about every major technology for 200 years. Steam, railroads, electricity, automobiles, computers, the internet. They will be wrong about AI. The pattern is not subtle."
+  },
+  {
+    id: 68, type: "tweet", isAI: true,
+    author: "@pmarca (AI-generated)", avatar: "🏗️",
+    text: "Cities that make it easy to build housing will inherit the future. Cities that don't will become beautiful, expensive museums. This is not complicated."
+  },
+  {
+    id: 69, type: "tweet", isAI: true,
+    author: "@pmarca (AI-generated)", avatar: "🏗️",
+    text: "Every institution currently fighting AI adoption is fighting for its own preservation, not for the people it claims to serve. These are different things."
+  },
+  {
+    id: 70, type: "tweet", isAI: true,
+    author: "@pmarca (AI-generated)", avatar: "🏗️",
+    text: "The correct response to 'move fast and break things' criticism: name one thing that moving slowly and carefully preserved that was actually worth preserving."
+  },
+  {
+    id: 71, type: "tweet", isAI: true,
+    author: "@pmarca (AI-generated)", avatar: "🏗️",
+    text: "Software ate media. Software ate retail. Software ate finance. Software is eating healthcare and education right now in slow motion. The only question is whether incumbents adapt or get replaced."
+  },
+  {
+    id: 72, type: "tweet", isAI: true,
+    author: "@pmarca (AI-generated)", avatar: "🏗️",
+    text: "People whose lives have been improved by technology vs. harmed by it: not close. Not the same order of magnitude. The discourse has not processed this."
+  },
+  {
+    id: 73, type: "tweet", isAI: true,
+    author: "@pmarca (AI-generated)", avatar: "🏗️",
+    text: "We are in the early innings. The commercial internet is 30 years old. Mainstream AI is 3 years old. Anyone telling you the interesting opportunities are gone is protecting incumbency, not telling the truth."
+  },
+  {
+    id: 74, type: "tweet", isAI: true,
+    author: "@pmarca (AI-generated)", avatar: "🏗️",
+    text: "Regulation that prevents new entrants from competing with established players is not consumer protection. It is cartel protection with a better PR strategy."
+  },
+  {
+    id: 75, type: "tweet", isAI: true,
+    author: "@pmarca (AI-generated)", avatar: "🏗️",
+    text: "The single most important thing any city or state can do to improve quality of life: permit more housing construction in high-demand areas. Everything else is noise."
+  },
+  {
+    id: 76, type: "tweet", isAI: true,
+    author: "@pmarca (AI-generated)", avatar: "🏗️",
+    text: "Pessimism about technology requires believing that every problem it creates is permanent and every problem it solves doesn't count. This is not a coherent worldview."
+  },
+
+  // Emmett Shear style (IDs 77–86)
+  {
+    id: 77, type: "tweet", isAI: true,
+    author: "@eshear (AI-generated)", avatar: "🎮",
+    text: "The hard part of building a live streaming platform wasn't the technology. It was understanding that creators and viewers are two different customers with partially opposed interests, and you have to serve both simultaneously."
+  },
+  {
+    id: 78, type: "tweet", isAI: true,
+    author: "@eshear (AI-generated)", avatar: "🎮",
+    text: "Most people think about AI risk as 'what if it does something bad.' The harder question is 'what if it does exactly what we asked and we asked for the wrong thing.' Specification is the real problem."
+  },
+  {
+    id: 79, type: "tweet", isAI: true,
+    author: "@eshear (AI-generated)", avatar: "🎮",
+    text: "Product intuition is pattern matching over many product experiences. The fastest way to develop it is to use lots of products with a genuinely critical eye, including and especially your competitors'."
+  },
+  {
+    id: 80, type: "tweet", isAI: true,
+    author: "@eshear (AI-generated)", avatar: "🎮",
+    text: "Every great product has a core interaction that feels almost magical the first time. If you can't identify what that moment is in your own product, you probably don't have one yet."
+  },
+  {
+    id: 81, type: "tweet", isAI: true,
+    author: "@eshear (AI-generated)", avatar: "🎮",
+    text: "The difference between a company that survives a crisis and one that doesn't is usually determined by decisions made years before the crisis, not during it."
+  },
+  {
+    id: 82, type: "tweet", isAI: true,
+    author: "@eshear (AI-generated)", avatar: "🎮",
+    text: "Community moderation at scale is an unsolved problem. Every platform that reaches sufficient size discovers this independently. Most handle it badly. No one has really cracked it."
+  },
+  {
+    id: 83, type: "tweet", isAI: true,
+    author: "@eshear (AI-generated)", avatar: "🎮",
+    text: "I think about AI development like nuclear physics in the 1940s. The people who understood what was being built had obligations that the people who didn't understand couldn't hold them to."
+  },
+  {
+    id: 84, type: "tweet", isAI: true,
+    author: "@eshear (AI-generated)", avatar: "🎮",
+    text: "Most management advice is written about large, stable companies by people who studied large, stable companies. Almost none of it applies to early-stage startups still figuring out what they are."
+  },
+  {
+    id: 85, type: "tweet", isAI: true,
+    author: "@eshear (AI-generated)", avatar: "🎮",
+    text: "The most common reason products fail isn't competition or technology or timing. It's that the team lost shared intuition about what they were building and why."
+  },
+  {
+    id: 86, type: "tweet", isAI: true,
+    author: "@eshear (AI-generated)", avatar: "🎮",
+    text: "What I didn't understand until I'd done it: the CEO's most important job isn't strategy or fundraising. It's maintaining the organizational clarity that lets everyone else do their jobs."
+  },
+
+  // Nick Cammarata style (IDs 87–96)
+  {
+    id: 87, type: "tweet", isAI: true,
+    author: "@nickcammarata (AI-generated)", avatar: "🧘",
+    text: "the weird thing about meditating a lot is you start noticing the texture of thoughts rather than their content, and once you can do that the content becomes way less sticky"
+  },
+  {
+    id: 88, type: "tweet", isAI: true,
+    author: "@nickcammarata (AI-generated)", avatar: "🧘",
+    text: "i think a lot of anxiety is the nervous system treating 'uncertainty about the future' as equivalent to 'danger in the present.' the update that dissolves it is just: these are different things"
+  },
+  {
+    id: 89, type: "tweet", isAI: true,
+    author: "@nickcammarata (AI-generated)", avatar: "🧘",
+    text: "one of the most useful psychological moves i know: when you're in conflict with someone, actually try to find the version of their position that's correct. not as debate tactic. actually look for where they're right."
+  },
+  {
+    id: 90, type: "tweet", isAI: true,
+    author: "@nickcammarata (AI-generated)", avatar: "🧘",
+    text: "something i've noticed: the same internal move that lets you hold your own suffering with compassion rather than resistance also makes you better at thinking clearly about hard problems"
+  },
+  {
+    id: 91, type: "tweet", isAI: true,
+    author: "@nickcammarata (AI-generated)", avatar: "🧘",
+    text: "hot take: a lot of what gets called depression is an accurate response to a life that needs changing, and the therapeutic goal shouldn't always be to reduce the signal"
+  },
+  {
+    id: 92, type: "tweet", isAI: true,
+    author: "@nickcammarata (AI-generated)", avatar: "🧘",
+    text: "there's a moment in meditation where you notice you've been thinking and return to the breath. most people think the practice is the breath part. i think the practice is the noticing-and-returning."
+  },
+  {
+    id: 93, type: "tweet", isAI: true,
+    author: "@nickcammarata (AI-generated)", avatar: "🧘",
+    text: "the thing that surprised me most about jhana states is they don't feel like what i expected from the descriptions. less mystical, more like the mind discovered a gear it didn't know it had."
+  },
+  {
+    id: 94, type: "tweet", isAI: true,
+    author: "@nickcammarata (AI-generated)", avatar: "🧘",
+    text: "useful frame: most emotional reactions are solutions to past problems running on current situations. the work is noticing when the solution no longer fits the problem it was built for."
+  },
+  {
+    id: 95, type: "tweet", isAI: true,
+    author: "@nickcammarata (AI-generated)", avatar: "🧘",
+    text: "i think about AI alignment a lot and i think about psychological health a lot and i keep noticing they're actually the same problem at different scales"
+  },
+  {
+    id: 96, type: "tweet", isAI: true,
+    author: "@nickcammarata (AI-generated)", avatar: "🧘",
+    text: "something about sustained meditation practice: you start caring less about being impressive and more about being genuine, and this turns out to be better for relationships and also for thinking"
+  },
+
+  // ── BLOG: AI — STYLE-BASED ───────────────────────────────────────────────────
+
+  // Neal Stephenson style (IDs 97–99)
+  {
+    id: 97, type: "blog", isAI: true,
+    author: "AI — Neal Stephenson style", avatar: "🔧",
+    text: "The mathematics of public key cryptography has a quality that computer scientists find almost morally offensive: it works for reasons no one fully understands. You can verify that it works, run it billions of times, build entire financial systems on top of it, and yet the underlying question—why is factoring large numbers hard?—remains unanswered. We have proof that it works in practice and essentially no idea why. This bothers people who think mathematics should be about certainty. It does not bother the engineers, who are pragmatists by necessity."
+  },
+  {
+    id: 98, type: "blog", isAI: true,
+    author: "AI — Neal Stephenson style", avatar: "🔧",
+    text: "The data center occupied four floors of a building designed, in a previous life, to store paper records for a regional bank. The architects had overengineered the floor loading to a degree that proved accidentally prescient. Server racks weigh considerably more than filing cabinets per square foot, and the building had become, through no planning whatsoever, one of the more structurally suitable facilities in the metro area for housing equipment that now ran a non-trivial fraction of the region's financial transactions."
+  },
+  {
+    id: 99, type: "blog", isAI: true,
+    author: "AI — Neal Stephenson style", avatar: "🔧",
+    text: "The history of timekeeping and the history of navigation are the same history, which is also the history of empire. The longitude problem—which consumed European science for a century and a half—was not fundamentally a navigation problem. It was a clock problem. A ship that knows the exact time at a fixed reference location can calculate its longitude trivially. The hard part was building a clock that kept accurate time while being tossed around on the North Atlantic, which required solving essentially every precision manufacturing problem of the eighteenth century simultaneously."
+  },
+
+  // John Grisham style (IDs 100–102)
+  {
+    id: 100, type: "blog", isAI: true,
+    author: "AI — John Grisham style", avatar: "⚖️",
+    text: "The deposition had been scheduled for nine o'clock, but opposing counsel arrived forty minutes late without apology, which was either a power move or genuine disorganization, and after eight years of practice Jake had learned to treat both with equal suspicion. The court reporter set up her machine. The witness—a mid-level bank officer named Prewitt who had approved the loan—adjusted his tie three times in two minutes. Lawyers who notice things notice this. Jake noticed."
+  },
+  {
+    id: 101, type: "blog", isAI: true,
+    author: "AI — John Grisham style", avatar: "⚖️",
+    text: "In the small courthouses of rural Mississippi, everybody knows everybody, and this is both the problem and the advantage. The judge had gone to high school with the defendant's father. The jury foreman had sold the plaintiff a truck four years ago. The court reporter was the bailiff's sister-in-law. None of this was unusual. All of it mattered."
+  },
+  {
+    id: 102, type: "blog", isAI: true,
+    author: "AI — John Grisham style", avatar: "⚖️",
+    text: "The settlement offer came on a Thursday afternoon, by fax, which was how Renfro always communicated when he wanted to signal informality—look, this is just a number, no pressure, no big deal. Sandra had been practicing long enough to know that settlements offered by fax on Thursday afternoons were the ones the other side needed most urgently and was trying hardest not to show."
+  },
+
+  // Jack Kerouac style (IDs 103–105)
+  {
+    id: 103, type: "blog", isAI: true,
+    author: "AI — Jack Kerouac style", avatar: "🚗",
+    text: "And we drove and the highway unrolled before us like a ribbon of American night and Dean was talking, always talking, about Denver and who was waiting and why it all mattered in the way that only Dean could make things matter—with his whole body leaning into the dashboard, his eyes bright, his hands making shapes in the air—and I thought yes, this is it, this is the real America, not the billboards and not the motels but this, the talking, the going, the beautiful and holy going."
+  },
+  {
+    id: 104, type: "blog", isAI: true,
+    author: "AI — Jack Kerouac style", avatar: "🚗",
+    text: "Somewhere between Cheyenne and Denver I started to understand what it was all about, which was nothing, which was everything, the road being the point and not the destination, the car being a kind of moving church where what you confessed was not sin but hunger—actual American hunger for something that kept not being where you just were and kept maybe being where you were going, and Sal knew this and Dean knew this and even the hitchhikers seemed to know it without being told."
+  },
+  {
+    id: 105, type: "blog", isAI: true,
+    author: "AI — Jack Kerouac style", avatar: "🚗",
+    text: "The jazz in that basement in Chicago was the realest thing I'd ever heard, the horn player bending notes like he was having an argument with God about suffering, and everyone in that room—the drinkers, the waitresses, the musicians leaning against the back wall with their cases—everyone understood something I was only beginning to understand, which is that music isn't about sound, it's about the space between sounds, the breathing, the waiting, what happens in you while you wait."
+  },
+
+  // David Foster Wallace style (IDs 106–108)
+  {
+    id: 106, type: "blog", isAI: true,
+    author: "AI — David Foster Wallace style", avatar: "📺",
+    text: "The thing about television—and this is not an original observation—is that it creates the impression that watching it constitutes participation in the world rather than withdrawal from it. You are receiving information. The images are of real places and real people. And yet the actual phenomenology of sitting there involves a kind of willed passivity that is difficult to distinguish from loneliness. The television knows this. The television has always known this. Whether this matters is the question nobody in the television business is eager to examine."
+  },
+  {
+    id: 107, type: "blog", isAI: true,
+    author: "AI — David Foster Wallace style", avatar: "📺",
+    text: "Consider the experience of being in a waiting room, one of the few situations specifically designed to make you aware that time is passing and you are doing nothing while it passes. Most of us find this intolerable. We reach for our phones not because something on them requires attention but because the alternative—sitting there experiencing the passage of time and whatever thoughts arise—has become genuinely difficult in a way that I suspect it was not always difficult, though I cannot actually know this."
+  },
+  {
+    id: 108, type: "blog", isAI: true,
+    author: "AI — David Foster Wallace style", avatar: "📺",
+    text: "What is interesting about sincerity—and I mean sincerity as a genuine mode of engaging with ideas, not as performance of sincerity, which is depressing—is that it requires a courage our cultural moment does not reward. To say what you actually think, without the protective irony that signals you know better than to really mean it, is to risk being thought naive. Naive is now the worst thing you can be, worse than wrong, because at least being wrong suggests you were trying."
+  },
+
+  // ── BLOG: HUMAN — PROJECT GUTENBERG (public domain) ────────────────────────
+
+  // Heart of Darkness — Joseph Conrad (1899)
+  {
+    id: 109, type: "blog", isAI: false,
+    author: "Joseph Conrad, Heart of Darkness (1899)", avatar: "⛵",
+    text: "The conquest of the earth, which mostly means the taking it away from those who have a different complexion or slightly flatter noses than ourselves, is not a pretty thing when you look into it too much."
+  },
+  {
+    id: 110, type: "blog", isAI: false,
+    author: "Joseph Conrad, Heart of Darkness (1899)", avatar: "⛵",
+    text: "Going up that river was like traveling back to the earliest beginnings of the world, when vegetation rioted on the earth and the big trees were kings."
+  },
+  {
+    id: 111, type: "blog", isAI: false,
+    author: "Joseph Conrad, Heart of Darkness (1899)", avatar: "⛵",
+    text: "We penetrated deeper and deeper into the heart of darkness. It was very quiet there. At night sometimes the roll of drums behind the curtain of trees would run up the river and remain sustained faintly."
+  },
+
+  // The Awakening — Kate Chopin (1899)
+  {
+    id: 112, type: "blog", isAI: false,
+    author: "Kate Chopin, The Awakening (1899)", avatar: "🌊",
+    text: "The voice of the sea is seductive; never ceasing, whispering, clamoring, murmuring, inviting the soul to wander for a spell in abysses of solitude; to lose itself in mazes of inward contemplation."
+  },
+  {
+    id: 113, type: "blog", isAI: false,
+    author: "Kate Chopin, The Awakening (1899)", avatar: "🌊",
+    text: "In short, Mrs. Pontellier was beginning to realize her position in the universe as a human being, and to recognize her relations as an individual to the world within and about her."
+  },
+  {
+    id: 114, type: "blog", isAI: false,
+    author: "Kate Chopin, The Awakening (1899)", avatar: "🌊",
+    text: "She was fond of her children in an uneven, impulsive way. She would sometimes gather them passionately to her heart; she would sometimes forget them."
+  },
+  {
+    id: 115, type: "blog", isAI: false,
+    author: "Kate Chopin, The Awakening (1899)", avatar: "🌊",
+    text: "With a writhing motion she settled herself more securely in the hammock. She perceived that her will had blazed up, stubborn and resistant."
+  },
+
+  // The Yellow Wallpaper — Charlotte Perkins Gilman (1892)
+  {
+    id: 116, type: "blog", isAI: false,
+    author: "Charlotte Perkins Gilman, The Yellow Wallpaper (1892)", avatar: "📝",
+    text: "John is a physician, and perhaps—(I would not say it to a living soul, of course, but this is dead paper and a great relief to my mind)—perhaps that is one reason I do not get well faster."
+  },
+  {
+    id: 117, type: "blog", isAI: false,
+    author: "Charlotte Perkins Gilman, The Yellow Wallpaper (1892)", avatar: "📝",
+    text: "It is dull enough to confuse the eye in following, pronounced enough to constantly irritate, and provoke study, and when you follow the lame, uncertain curves for a little distance they suddenly commit suicide—plunge off at outrageous angles, destroy themselves in unheard-of contradictions."
+  },
+  {
+    id: 118, type: "blog", isAI: false,
+    author: "Charlotte Perkins Gilman, The Yellow Wallpaper (1892)", avatar: "📝",
+    text: "Behind that outside pattern the dim shapes get clearer every day. It is always the same shape, only very numerous. And it is like a woman stooping down and creeping about behind that pattern."
+  },
+
+  // Moby-Dick — Herman Melville (1851)
+  {
+    id: 119, type: "blog", isAI: false,
+    author: "Herman Melville, Moby-Dick (1851)", avatar: "🐋",
+    text: "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world."
+  },
+  {
+    id: 120, type: "blog", isAI: false,
+    author: "Herman Melville, Moby-Dick (1851)", avatar: "🐋",
+    text: "There is nothing surprising in this. If they but knew it, almost all men in their degree, some time or other, cherish very nearly the same feelings towards the ocean with me."
+  },
+  {
+    id: 121, type: "blog", isAI: false,
+    author: "Herman Melville, Moby-Dick (1851)", avatar: "🐋",
+    text: "But man's insanity is heaven's sense; and wandering from all continents across the midnight seas, came poor Queequeg with a coffin on his back."
+  },
+
+  // Pride and Prejudice — Jane Austen (1813)
+  {
+    id: 122, type: "blog", isAI: false,
+    author: "Jane Austen, Pride and Prejudice (1813)", avatar: "🫖",
+    text: "She is tolerable: but not handsome enough to tempt me; and I am in no humour at present to give consequence to young ladies who are slighted by other men."
+  },
+
+  // Adventures of Huckleberry Finn — Mark Twain (1884)
+  {
+    id: 123, type: "blog", isAI: false,
+    author: "Mark Twain, Adventures of Huckleberry Finn (1884)", avatar: "🎩",
+    text: "You don't know about me without you have read a book by the name of The Adventures of Tom Sawyer; but that ain't no matter. That book was made by Mr. Mark Twain, and he told the truth, mainly. There was things which he stretched, but mainly he told the truth."
+  },
+  {
+    id: 124, type: "blog", isAI: false,
+    author: "Mark Twain, Adventures of Huckleberry Finn (1884)", avatar: "🎩",
+    text: "Now the way that the book winds up is this: Tom and me found the money that the robbers hid in the cave, and it made us rich. We got six thousand dollars apiece—all gold. It was an awful sight of money when it was piled up."
+  },
+  {
+    id: 125, type: "blog", isAI: false,
+    author: "Mark Twain, Adventures of Huckleberry Finn (1884)", avatar: "🎩",
+    text: "The widow she cried over me, and called me a poor lost lamb, and she called me a lot of other names, too, but she never meant no harm by it. She put me in them new clothes again, and I couldn't do nothing but sweat and sweat, and feel all cramped up."
+  },
+  {
+    id: 126, type: "blog", isAI: false,
+    author: "Mark Twain, Adventures of Huckleberry Finn (1884)", avatar: "🎩",
+    text: "I says to myself, I can fix it now so nobody won't think of following me. About twelve o'clock we turned out and went along up the bank. The river was coming up pretty fast, and lots of driftwood going by on the rise."
+  },
+
+  // The Souls of Black Folk — W.E.B. Du Bois (1903)
+  {
+    id: 127, type: "blog", isAI: false,
+    author: "W.E.B. Du Bois, The Souls of Black Folk (1903)", avatar: "✊",
+    text: "Between me and the other world there is ever an unasked question: unasked by some through feelings of delicacy; by others through the difficulty of rightly framing it."
+  },
+  {
+    id: 128, type: "blog", isAI: false,
+    author: "W.E.B. Du Bois, The Souls of Black Folk (1903)", avatar: "✊",
+    text: "It is a peculiar sensation, this double-consciousness, this sense of always looking at one's self through the eyes of others, of measuring one's soul by the tape of a world that looks on in amused contempt and pity."
+  },
+  {
+    id: 129, type: "blog", isAI: false,
+    author: "W.E.B. Du Bois, The Souls of Black Folk (1903)", avatar: "✊",
+    text: "The problem of the twentieth century is the problem of the color-line,—the relation of the darker to the lighter races of men in Asia and Africa, in America and the islands of the sea."
+  },
+  {
+    id: 130, type: "blog", isAI: false,
+    author: "W.E.B. Du Bois, The Souls of Black Folk (1903)", avatar: "✊",
+    text: "In all things purely social we can be as separate as the five fingers, and yet one as the hand in all things essential to mutual progress."
+  },
+
+  // Crime and Punishment — Fyodor Dostoevsky (trans. Constance Garnett, 1866)
+  {
+    id: 131, type: "blog", isAI: false,
+    author: "Fyodor Dostoevsky, Crime and Punishment (1866)", avatar: "🔦",
+    text: "\"I want to attempt a thing like that and am frightened by these trifles,\" he thought, with an odd smile. \"Hm... yes, all is in a man's hands and he lets it all slip from cowardice, that's an axiom. It would be interesting to know what it is men are most afraid of. Taking a new step, uttering a new word is what they fear most.\""
+  },
+  {
+    id: 132, type: "blog", isAI: false,
+    author: "Fyodor Dostoevsky, Crime and Punishment (1866)", avatar: "🔦",
+    text: "Poverty is not a vice, that's a true saying. Yet I know too that drunkenness is not a virtue, and that that's even truer. But beggary, honoured sir, beggary is a vice. In poverty you may still retain your innate nobility of soul, but in beggary—never—no one."
+  },
+  {
+    id: 133, type: "blog", isAI: false,
+    author: "Fyodor Dostoevsky, Crime and Punishment (1866)", avatar: "🔦",
+    text: "She is an angel! She is not writing anything to you now, and has only told me to write that she has so much, so much to tell you that she is not going to take up her pen now, for a few lines would tell you nothing, and it would only mean upsetting herself."
+  },
+  {
+    id: 134, type: "blog", isAI: false,
+    author: "Fyodor Dostoevsky, Crime and Punishment (1866)", avatar: "🔦",
+    text: "His mother's letter had been a torture to him, but as regards the chief fact in it, he had felt not one moment's hesitation, even whilst he was reading the letter. The essential question was settled, and irrevocably settled, in his mind: \"Never such a marriage while I am alive and Mr. Luzhin be damned!\""
+  },
+
+  // Narrative of the Life of Frederick Douglass (1845)
+  {
+    id: 135, type: "blog", isAI: false,
+    author: "Frederick Douglass, Narrative of the Life (1845)", avatar: "🦅",
+    text: "I have no accurate knowledge of my age, never having seen any authentic record containing it. By far the larger part of the slaves know as little of their ages as horses know of theirs."
+  },
+  {
+    id: 136, type: "blog", isAI: false,
+    author: "Frederick Douglass, Narrative of the Life (1845)", avatar: "🦅",
+    text: "Learning would spoil the best nigger in the world. Now if you teach that nigger how to read, there would be no keeping him. It would forever unfit him to be a slave."
+  },
+  {
+    id: 137, type: "blog", isAI: false,
+    author: "Frederick Douglass, Narrative of the Life (1845)", avatar: "🦅",
+    text: "Slaves sing most when they are most unhappy. The songs of the slave represent the sorrows of his heart; and he is relieved by them, only as an aching heart is relieved by its tears."
+  },
+  {
+    id: 138, type: "blog", isAI: false,
+    author: "Frederick Douglass, Narrative of the Life (1845)", avatar: "🦅",
+    text: "It struck me with awful force. It was the blood-stained gate, the entrance to the hell of slavery, through which I was about to pass. It was a most terrible spectacle."
+  },
+
+  // Walden — Henry David Thoreau (1854)
+  {
+    id: 139, type: "blog", isAI: false,
+    author: "Henry David Thoreau, Walden (1854)", avatar: "🌲",
+    text: "The mass of men lead lives of quiet desperation. What is called resignation is confirmed desperation. From the desperate city you go into the desperate country, and have to console yourself with the bravery of minks and muskrats."
+  },
+  {
+    id: 140, type: "blog", isAI: false,
+    author: "Henry David Thoreau, Walden (1854)", avatar: "🌲",
+    text: "I long ago lost a hound, a bay horse, and a turtle-dove, and am still on their trail. Many are the travellers I have spoken concerning them, describing their tracks and what calls they answered to."
+  },
+  {
+    id: 141, type: "blog", isAI: false,
+    author: "Henry David Thoreau, Walden (1854)", avatar: "🌲",
+    text: "Near the end of March, 1845, I borrowed an axe and went down to the woods by Walden Pond, nearest to where I intended to build my house, and began to cut down some tall, arrowy white pines, still in their youth, for timber."
+  },
+  {
+    id: 142, type: "blog", isAI: false,
+    author: "Henry David Thoreau, Walden (1854)", avatar: "🌲",
+    text: "The greater part of what my neighbors call good I believe in my soul to be bad, and if I repent of anything, it is very likely to be my good behavior. What demon possessed me that I behaved so well?"
+  },
+
+  // Up From Slavery — Booker T. Washington (1901)
+  {
+    id: 143, type: "blog", isAI: false,
+    author: "Booker T. Washington, Up From Slavery (1901)", avatar: "🏫",
+    text: "I was born a slave on a plantation in Franklin County, Virginia. I am not quite sure of the exact place or exact date of my birth, but at any rate I suspect I must have been born somewhere and at some time."
+  },
+  {
+    id: 144, type: "blog", isAI: false,
+    author: "Booker T. Washington, Up From Slavery (1901)", avatar: "🏫",
+    text: "I had no schooling whatever while I was a slave, though I remember on several occasions I went as far as the schoolhouse door with one of my young mistresses to carry her books."
+  },
+  {
+    id: 145, type: "blog", isAI: false,
+    author: "Booker T. Washington, Up From Slavery (1901)", avatar: "🏫",
+    text: "The sweeping of that room was my college examination, and never did any youth pass an examination for entrance into Harvard or Yale that gave him more genuine satisfaction."
+  },
+  {
+    id: 146, type: "blog", isAI: false,
+    author: "Booker T. Washington, Up From Slavery (1901)", avatar: "🏫",
+    text: "The older I grow, the more I am convinced that there is no education which one can get from books and costly apparatus that is equal to that which can be gotten from contact with great men and women."
+  },
+
+  // Edgar Allan Poe, Tales (~1840s)
+  {
+    id: 147, type: "blog", isAI: false,
+    author: "Edgar Allan Poe, A Descent into the Maelström (~1841)", avatar: "🌑",
+    text: "The edge of the whirl was represented by a broad belt of gleaming spray; but no particle of this slipped into the mouth of the terrific funnel, whose interior, as far as the eye could fathom it, was a smooth, shining, and jet-black wall of water."
+  },
+  {
+    id: 148, type: "blog", isAI: false,
+    author: "Edgar Allan Poe, The Thousand-and-Second Tale of Scheherazade (1845)", avatar: "🌑",
+    text: "Now, this conclusion (which is that of the story as we have it upon record) is, no doubt, excessively proper and pleasant—but alas! like a great many pleasant things, is more pleasant than true."
+  },
+
+  // Roderick Hudson — Henry James (1875)
+  {
+    id: 149, type: "blog", isAI: false,
+    author: "Henry James, Roderick Hudson (1875)", avatar: "🎨",
+    text: "I want to care for something, or for some one. And I want to care with a certain ardor; even, if you can believe it, with a certain passion. I can't just now feel ardent and passionate about a hospital or a dormitory."
+  },
+  {
+    id: 150, type: "blog", isAI: false,
+    author: "Henry James, Roderick Hudson (1875)", avatar: "🎨",
+    text: "The figure might have been some beautiful youth of ancient fable,—Hylas or Narcissus, Paris or Endymion. Its beauty was the beauty of natural movement; nothing had been sought to be represented but the perfection of an attitude."
+  },
+
+  // The Time Machine — H.G. Wells (1895)
+  {
+    id: 151, type: "blog", isAI: false,
+    author: "H.G. Wells, The Time Machine (1895)", avatar: "⚙️",
+    text: "There are really four dimensions, three which we call the three planes of Space, and a fourth, Time. There is, however, a tendency to draw an unreal distinction between the former three dimensions and the latter, because it happens that our consciousness moves intermittently in one direction along the latter from the beginning to the end of our lives."
+  },
+  {
+    id: 152, type: "blog", isAI: false,
+    author: "H.G. Wells, The Time Machine (1895)", avatar: "⚙️",
+    text: "He was in an amazing plight. His coat was dusty and dirty, and smeared with green down the sleeves; his hair disordered, and as it seemed to me greyer—either with dust and dirt or because its colour had actually faded. His face was ghastly pale; his chin had a brown cut on it—a cut half-healed; his expression was haggard and drawn, as by intense suffering."
+  },
+  {
+    id: 153, type: "blog", isAI: false,
+    author: "H.G. Wells, The Time Machine (1895)", avatar: "⚙️",
+    text: "In another moment we were standing face to face, I and this fragile thing out of futurity. He came straight up to me and laughed into my eyes. The absence from his bearing of any sign of fear struck me at once."
+  },
+
+  // Frederick Douglass — later chapters
+  {
+    id: 154, type: "blog", isAI: false,
+    author: "Frederick Douglass, Narrative of the Life (1845)", avatar: "🦅",
+    text: "Colonel Lloyd kept a large and finely cultivated garden, which afforded almost constant employment for four men, besides the chief gardener, (Mr. M'Durmond.) This garden was probably the greatest attraction of the place."
+  },
+  {
+    id: 155, type: "blog", isAI: false,
+    author: "Frederick Douglass, Narrative of the Life (1845)", avatar: "🦅",
+    text: "Mr. Gore was a grave man, and, though a young man, he indulged in no jokes, said no funny words, seldom smiled. His words were in perfect keeping with his looks, and his looks were in perfect keeping with his words."
+  },
+  {
+    id: 156, type: "blog", isAI: false,
+    author: "Frederick Douglass, Narrative of the Life (1845)", avatar: "🦅",
+    text: "But, alas! this kind heart had but a short time to remain such. The fatal poison of irresponsible power was already in her hands, and soon commenced its infernal work."
+  },
+  {
+    id: 157, type: "blog", isAI: false,
+    author: "Frederick Douglass, Narrative of the Life (1845)", avatar: "🦅",
+    text: "The silver trump of freedom had roused my soul to eternal wakefulness. Freedom now appeared, to disappear no more forever. It was heard in every sound, and seen in every thing."
+  },
+
+  // The Souls of Black Folk — W.E.B. Du Bois (later chapters)
+  {
+    id: 158, type: "blog", isAI: false,
+    author: "W.E.B. Du Bois, The Souls of Black Folk (1903)", avatar: "✊",
+    text: "Once upon a time I taught school in the hills of Tennessee, where the broad dark vale of the Mississippi begins to roll and crumple to greet the Alleghanies."
+  },
+  {
+    id: 159, type: "blog", isAI: false,
+    author: "W.E.B. Du Bois, The Souls of Black Folk (1903)", avatar: "✊",
+    text: "Thus did the United States government definitely assume charge of the emancipated Negro as the ward of the nation. It was a tremendous undertaking."
+  },
+  {
+    id: 160, type: "blog", isAI: false,
+    author: "W.E.B. Du Bois, The Souls of Black Folk (1903)", avatar: "✊",
+    text: "Mr. Washington represents in Negro thought the old attitude of adjustment and submission; but adjustment at such a peculiar time as to make his programme unique."
+  },
+
   // ── TWEETS: HUMAN (bonus from CSV export, Dec 31 2019) ──────────────────────
   {
     id: 51, type: "tweet", isAI: false,

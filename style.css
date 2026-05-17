@@ -71,6 +71,17 @@ body {
 }
 .btn-score:hover { box-shadow: 0 4px 12px rgba(108,99,255,0.4); }
 
+.btn-score--locked {
+  background: #e0e0e0;
+  color: #aaa;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+.btn-score--locked:hover {
+  transform: none;
+  box-shadow: none;
+}
+
 /* ── Intro ────────────────────────────────────────────────────────────────── */
 
 .intro {
@@ -274,6 +285,11 @@ body {
   display: flex;
   gap: 12px;
 }
+
+.score-action {
+  display: flex;
+}
+.score-action .btn-score { flex: 1; }
 
 /* ── Results ──────────────────────────────────────────────────────────────── */
 
